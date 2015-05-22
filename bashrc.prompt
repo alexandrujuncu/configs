@@ -68,4 +68,7 @@ function get_jobs() {
 	[ $TOTAL -ne 0 ] && echo "[Jobs:$TOTAL (${RUNNING}r/${STOPPED}s)]"
 }
 
-export PS1="[\u@\h] [\d \t] \`last_command_status\`\`get_jobs\` \`parse_git_branch\`\n[\w]\\$ "
+#no color
+#export PS1="[\u@\h] [\d \t] \`last_command_status\`\`get_jobs\` \`parse_git_branch\`\n[\w]\\$ "
+#with colors
+export PS1="[\u@\h] [\d \t]\[\e[31m\]\`last_command_status\`\[\e[m\]\[\e[34m\]\`get_jobs\`\[\e[m\]\[\e[32m\]\`parse_git_branch\`\[\e[m\]\n[\w]\\$ "
