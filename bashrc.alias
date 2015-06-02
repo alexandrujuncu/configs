@@ -1,0 +1,1 @@
+alias mkcscope="find -name \"*.[chs]\">cscope.files; cscope -b -q -k"
