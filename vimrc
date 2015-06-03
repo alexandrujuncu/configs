@@ -23,6 +23,25 @@ set list listchars=tab:»\ ,trail:·,extends:»,precedes:«
 set tabpagemax=20
 
 
+" Add modeline functionality -- it's disabled by default on some distros
+set modeline
+
+" Per-filetype settings
+autocmd FileType java		setlocal tw=78 cin foldmethod=marker
+autocmd FileType c,cpp		setlocal tw=72 cindent noexpandtab
+autocmd FileType python		setlocal autoindent expandtab sts=4 sw=4 tw=78
+autocmd FileType haskell	setlocal tw=72 sw=2 sts=2 et
+autocmd FileType tex		setlocal tw=72 sw=2 sts=2 ai et
+" 'linebreak' won't work without 'nolist'
+autocmd FileType creole		setlocal tw=0 fo=t wrap nolist linebreak
+autocmd FileType mail		setlocal tw=72 fo=tql
+autocmd FileType lua		setlocal sts=4 sw=4 ai et
+autocmd FileType rust		setlocal cin
+autocmd FileType sh		setlocal sts=4 sw=4 si et
+
+filetype plugin on
+
+
 
 " Ripped off from Alexandru Mosoi (via ddvlad)
 set statusline=%<%f\ %y%h%m%r%=%-24.(0x%02B,%l/%L,%c%V%)\ %P
