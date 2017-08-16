@@ -1,0 +1,6 @@
+nnoremap <C-t>		:tabnew<CR>
+nnoremap <S-tab>	:tabprevious<CR>
+nnoremap <tab>		:tabnext<CR>
+inoremap <C-S-tab><Esc>	:tabprevious<CR>
+inoremap <C-tab><Esc>	:tabnext<CR>i
+inoremap <C-t><Esc>	:tabnew<CR>

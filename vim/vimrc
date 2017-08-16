@@ -1,0 +1,3 @@
+source ~/.vim/vimrc.d/vundle
+source ~/.vim/vimrc.d/settings
+source ~/.vim/vimrc.d/shortcuts

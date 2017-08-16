@@ -1,0 +1,11 @@
+syntax on	"syntax highlighing
+set number	"line numbers
+set mouse-=a	"disable mouse editing
+set backspace=2	"fix backspace problems
+set hlsearch	"search highlighting
+set noswapfile	"no swap file... duhhh
+set tabpagemax=20
+
+"Ripped off from  ddvlad:
+"mark tabs and trailing spaces
+set list listchars=tab:»\ ,trail:·,extends:»,precedes:«
